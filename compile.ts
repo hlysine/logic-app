@@ -2,7 +2,7 @@ import { $ } from 'bun';
 
 await $`rm -rf dist`.nothrow();
 await $`mkdir dist`;
-await $`cp node_modules/webview-bun/build/**.* dist -r`;
+await $`cp node_modules/webview-bun/build/**.* dist`;
 
 $.cwd('dist');
 
